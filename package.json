@@ -1,0 +1,19 @@
+{
+    "name": "college-feedback-system",
+    "version": "1.0.0",
+    "description": "timepass project",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pc-1827/college-feedback-system.git"
+    },
+    "author": "pc-1827",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/pc-1827/college-feedback-system/issues"
+    },
+    "homepage": "https://github.com/pc-1827/college-feedback-system#readme"
+  }
