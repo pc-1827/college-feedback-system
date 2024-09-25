@@ -40,6 +40,12 @@ const viewGroups = async (req, res) => {
             email: true,
           },
         },
+        forms: {
+          select: {
+            id: true,
+            form_title: true,
+          }
+        }
       },
     });
 
@@ -77,6 +83,10 @@ const deleteGroup = async (req, res) => {
   const { groupId } = req.params;
 
   try {
+    await prisma.feedbackForm.deleteMany({
+      where: { groupId: parseInt(groupId) }
+    })
+
     await prisma.group.delete({
       where: { id: parseInt(groupId) },
     });
